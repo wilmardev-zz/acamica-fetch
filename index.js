@@ -1,5 +1,5 @@
 const PATH_HEADING_IMAGE = "/assets/images/js-icon.png";
-const PATH_EXTERNAL_NAVBAR = "/src/html/navbars.html";
+const PATH_EXTERNAL_NAVBAR = "/src/html/navbar.html";
 
 const changeHeaderImage = () => {
   sendRequest(PATH_HEADING_IMAGE).then(response => {
@@ -10,7 +10,6 @@ const changeHeaderImage = () => {
   const navBarSource = document.getElementById("navbar");
   sendResquestText(PATH_EXTERNAL_NAVBAR)
     .then(htmlString => {
-        debugger;
       navBarSource.innerHTML = htmlString;
     })
     .catch(error => {

@@ -1,3 +1,4 @@
+// Return json without promise
 const sendRequest = async url => {
   return fetch(url)
     .then(response => {
@@ -13,6 +14,7 @@ const sendRequest = async url => {
     });
 };
 
+// Return string text from promise
 const sendResquestText = async url => {
   return fetch(url)
     .then(response => {
